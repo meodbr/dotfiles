@@ -155,6 +155,5 @@ skeleton() {
     ~/.path/skeleton.sh $@
 }
 
-alias nv="nvim"
 export EDITOR=nvim
 

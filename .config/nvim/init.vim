@@ -101,7 +101,7 @@ augroup END
  au Syntax jflex    so ~/.vim/syntax/jflex.vim
 
  " Mouse support
-set mouse=a
+set mouse=r
 
  " Map F8 to Tagbar
  nmap <F8> :TagbarToggle<CR>
