@@ -1,0 +1,788 @@
+{
+  "coc-python|global": {
+    "INTERPRETERS_CACHE_v3_CondaEnvFileService": [],
+    "INTERPRETERS_CACHE_v3_CondaEnvService": [],
+    "INTERPRETERS_CACHE_v3_VirtualEnvService": [],
+    "/usr/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2"
+      },
+      "expiry": 1668708995607
+    },
+    "/usr/bin/python3.10.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "ba9387cb6914b1f32de41dfc755b0877e4efd917a230323fb7cb85d98182b8624654c5589e3f472595d4c041f70a339b9ab0bad723f0a45d2bbd0292aa072923"
+      },
+      "expiry": 1668708995629
+    },
+    "/bin/python3.10.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "ba9387cb6914b1f32de41dfc755b0877e4efd917a230323fb7cb85d98182b8624654c5589e3f472595d4c041f70a339b9ab0bad723f0a45d2bbd0292aa072923"
+      },
+      "expiry": 1668708995626
+    },
+    "/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2"
+      },
+      "expiry": 1668708995628
+    },
+    "INTERPRETERS_CACHE_v3_KnownPathsService": [
+      {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "ba9387cb6914b1f32de41dfc755b0877e4efd917a230323fb7cb85d98182b8624654c5589e3f472595d4c041f70a339b9ab0bad723f0a45d2bbd0292aa072923",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "ba9387cb6914b1f32de41dfc755b0877e4efd917a230323fb7cb85d98182b8624654c5589e3f472595d4c041f70a339b9ab0bad723f0a45d2bbd0292aa072923",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "ba9387cb6914b1f32de41dfc755b0877e4efd917a230323fb7cb85d98182b8624654c5589e3f472595d4c041f70a339b9ab0bad723f0a45d2bbd0292aa072923",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/usr",
+        "fileHash": "ba9387cb6914b1f32de41dfc755b0877e4efd917a230323fb7cb85d98182b8624654c5589e3f472595d4c041f70a339b9ab0bad723f0a45d2bbd0292aa072923",
+        "type": "Unknown"
+      }
+    ],
+    "INTERPRETERS_CACHE_v3_CurrentPathService": [
+      {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+        "type": "Unknown"
+      }
+    ],
+    "InterpreterAutoSeletionRule-currentPath": {
+      "architecture": 3,
+      "path": "/usr/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.6-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.6-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+      "type": "Unknown"
+    },
+    "PipEnvInformation": [],
+    "preferredGlobalPyInterpreter": {
+      "architecture": 3,
+      "path": "/usr/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.6-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.6-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+      "type": "Unknown"
+    },
+    "/usr/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.10.6 64-bit",
+        "hash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2-9f62a850624d629287b07eacae5573a9"
+      },
+      "expiry": 1668708995701
+    },
+    "/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.10.6 64-bit",
+        "hash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2-6a05dc82d0e3829bf46f4c4bfc8fda50"
+      },
+      "expiry": 1668708995703
+    },
+    "InterpreterAutoSeletionRule-system": {
+      "architecture": 3,
+      "path": "/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.6-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.6-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+      "type": "Unknown",
+      "displayName": "Python 3.10.6 64-bit"
+    },
+    "InterpreterAutoSeletionRule-cachedInterpreters": {
+      "architecture": 3,
+      "path": "/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.6-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.6-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+      "type": "Unknown",
+      "displayName": "Python 3.10.6 64-bit"
+    },
+    "/usr/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/bin/python3",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.10.6-final",
+            "major": 3,
+            "minor": 10,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.10.6-final"
+          },
+          "sysPrefix": "/usr",
+          "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+          "type": "Unknown",
+          "displayName": "Python 3.10.6 64-bit"
+        }
+      },
+      "expiry": 1668708995743
+    },
+    "/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+        "info": {
+          "architecture": 3,
+          "path": "/bin/python3",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.10.6-final",
+            "major": 3,
+            "minor": 10,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.10.6-final"
+          },
+          "sysPrefix": "/usr",
+          "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+          "type": "Unknown",
+          "displayName": "Python 3.10.6 64-bit"
+        }
+      },
+      "expiry": 1668708995747
+    },
+    "ProposeLSBanner": false,
+    "/home/meo/bot-telegram/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183"
+      },
+      "expiry": 1668708995625
+    },
+    "/home/meo/bot-telegram/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183"
+      },
+      "expiry": 1668708995636
+    },
+    "/home/meo/bot-telegram/bin/python3.10.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/home/meo/bot-telegram/bin/python3.10",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.10.6-final",
+          "major": 3,
+          "minor": 10,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.10.6-final"
+        },
+        "sysPrefix": "/home/meo/bot-telegram",
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183"
+      },
+      "expiry": 1668708995613
+    },
+    "/home/meo/bot-telegram/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.10.6 64-bit ('bot-telegram': venv)",
+        "hash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183-aedeaff0932d57fa221037d13124eac8"
+      },
+      "expiry": 1668708995796
+    },
+    "/home/meo/bot-telegram/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183"
+      },
+      "expiry": 1668708995710
+    },
+    "/home/meo/bot-telegram/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.10.6 64-bit",
+        "hash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183-3928772a22fd8501cfb87c0c237023a9"
+      },
+      "expiry": 1668708995699
+    },
+    "/home/meo/bot-telegram/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+        "info": {
+          "architecture": 3,
+          "path": "/home/meo/bot-telegram/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.10.6-final",
+            "major": 3,
+            "minor": 10,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.10.6-final"
+          },
+          "sysPrefix": "/home/meo/bot-telegram",
+          "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+          "type": "Unknown",
+          "displayName": "Python 3.10.6 64-bit"
+        }
+      },
+      "expiry": 1668708995739
+    },
+    "pylint_DisableLinterInstallPrompt": true
+  },
+  "coc-python|/home/meo/.config/nvim": {
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:89c8959cf4540f9bd2b78e8efe7f596a": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:89c8959cf4540f9bd2b78e8efe7f596a": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/meo/.config/nvim": {
+      "architecture": 3,
+      "path": "/usr/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.6-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.6-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "18b0b52ff9c8dde584925cea166538cdaef4a93ab445aede443f9b9d29e22e8e2b193d0490607bb64784ab3ceb3053c94e807508b652611dd5baa2c0e5ea2af2",
+      "type": "Unknown"
+    }
+  },
+  "coc-python|/home/meo/bot-telegram": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:27047cea5b0bc30ff38df987b77d6e96": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:27047cea5b0bc30ff38df987b77d6e96": [],
+    "SelectedPythonPath": "/home/meo/bot-telegram/bin/python3",
+    "autoSelectedWorkspacePythonInterpreter-/home/meo/bot-telegram": {
+      "architecture": 3,
+      "path": "/home/meo/bot-telegram/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.6-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.6-final"
+      },
+      "sysPrefix": "/home/meo/bot-telegram",
+      "fileHash": "fbf29ed3815bf985db670d5b30becf4992d35a99016f437bb9c7e55555ec666f1b8a15bb7940e2bbff73fd00a8b373498ecd94942059bbe4b5df4c983de1c183",
+      "type": "VirtualEnv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  }
+}

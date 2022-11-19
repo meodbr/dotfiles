@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=meo.desbois@gmail.com
+Enabled=true
+Parent=fbfb5e0d493fbe60b8569341c2d38d38fd3dfb07
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=7ed7a3a22298dd4f1f1cdd50e3a41bbc913f99e7
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=meo.desbois@gmail.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none

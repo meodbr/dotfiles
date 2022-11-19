@@ -1,0 +1,23 @@
+[Data Source]
+DisplayName=meo.desbois@gmail.com
+Enabled=true
+Parent=fbfb5e0d493fbe60b8569341c2d38d38fd3dfb07
+
+[Authentication]
+Host=smtp.gmail.com
+Method=XOAUTH2
+Port=465
+ProxyUid=system-proxy
+RememberPassword=true
+User=meo.desbois@gmail.com
+CredentialName=
+IsExternal=false
+
+[Security]
+Method=ssl-on-alternate-port
+
+[Mail Transport]
+BackendName=smtp
+
+[Smtp Backend]
+ReencodeData=false
