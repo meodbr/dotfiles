@@ -1,0 +1,5 @@
+{
+  // MEO : config from https://chrislabarge.com/posts/neovim-unity-engine/
+  "coc.source.OmniSharp.enable" : true,
+  "coc.source.OmniSharp.triggerCharacters": ".",
+}

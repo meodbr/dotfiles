@@ -15,6 +15,7 @@ Plug 'tommcdo/vim-lion'
 Plug 'Shirk/vim-gas'
 "" Plug 'ntpeters/vim-better-whitespace' " no
 Plug 'vifm/vifm.vim'
+Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
 
 " Get syntax files from config folder
@@ -44,6 +45,9 @@ set wrap
 
 " set node version for coc
 let g:coc_node_path = '/snap/bin/node'
+
+" set omnisharp to use my mono version
+let g:OmniSharp_server_use_mono = 1
 
 " Function to set tab width to n spaces
 function! SetTab(n)
