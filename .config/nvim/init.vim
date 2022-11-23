@@ -16,6 +16,7 @@ Plug 'Shirk/vim-gas'
 "" Plug 'ntpeters/vim-better-whitespace' " no
 Plug 'vifm/vifm.vim'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'kalvinpearce/ShaderHighlight'
 call plug#end()
 
 " Get syntax files from config folder
@@ -96,6 +97,12 @@ augroup END
 augroup gas_ft
   au!
   autocmd BufNewFile,BufRead *.S      set syntax=gas
+augroup END
+
+"" shader files sintax highlighting
+augroup gas_ft
+  au!
+  autocmd BufNewFile,BufRead *.compute      set filetype=hlsl
 augroup END
 
 " JFlex syntax highlighting
@@ -320,5 +327,6 @@ tnoremap <Esc> <C-\><C-n>
 
 "" Vifm settings
 nmap <silent>vv :VsplitVifm<CR>
-nmap <silent>vh :SplitVifm<CR>
+nmap <silent>vc :SplitVifm<CR>
 nmap <silent>vd :DiffVifm<CR>
+nmap <silent>vm :Vifm<CR>
