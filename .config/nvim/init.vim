@@ -17,13 +17,15 @@ Plug 'Shirk/vim-gas'
 Plug 'vifm/vifm.vim'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'kalvinpearce/ShaderHighlight'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " Get syntax files from config folder
 set runtimepath+=~/.config/nvim/syntax
 
 " Theme
-colorscheme palenight
+colorscheme catppuccin
 
 " Disable C-z from job-controlling neovim
 nnoremap <c-z> <nop>

@@ -160,3 +160,5 @@ skeleton() {
 export EDITOR=nvim
 # export PS1="\W \$ "
 
+# starship
+eval "$(starship init bash)"
