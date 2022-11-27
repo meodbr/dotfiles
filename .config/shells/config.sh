@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# CONFIG ALL SHELLS HAVE IN COMMON
+#
+

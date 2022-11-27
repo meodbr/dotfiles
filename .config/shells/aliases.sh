@@ -1,8 +1,10 @@
-
+#!/bin/bash
 
 # dotfiles github backup
 alias config='/usr/bin/git --git-dir=/home/meo/.cfg/ --work-tree=/home/meo'
 
+alias shellmake=shellmake.sh
+alias skeleton=skeleton.sh
 
 # rapide
 alias nv="nvim"

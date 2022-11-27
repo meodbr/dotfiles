@@ -1,5 +1,7 @@
+"" lua require('config')
+
 call plug#begin()
-Plug 'drewtempelmeyer/palenight.vim'
+"" Plug 'drewtempelmeyer/palenight.vim'
 "" Plug 'vim-airline/vim-airline' "no
 "" Plug 'wlangstroth/vim-racket' "?
 Plug 'sheerun/vim-polyglot'
@@ -19,13 +21,15 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'kalvinpearce/ShaderHighlight'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'ap/vim-css-color'
+"" Plug 'gko/vim-coloresque'
 call plug#end()
 
 " Get syntax files from config folder
 set runtimepath+=~/.config/nvim/syntax
 
 " Theme
-colorscheme catppuccin
+colorscheme catppuccin-macchiato
+let g:lightline = {'colorscheme': 'catppuccin'}
 
 " Disable C-z from job-controlling neovim
 nnoremap <c-z> <nop>

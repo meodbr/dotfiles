@@ -1,0 +1,124 @@
+format = """
+ $username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$character"""
+
+right_format = """
+$sudo\
+$cmd_duration\
+$memory_usage\
+$python\
+$c\
+$localip\
+$shell\
+$time"""
+
+continuation_prompt = "[❯❯](mauve) "
+
+add_newline = false
+
+palette = "catppuccin-macchiato"
+
+[time]
+disabled = false
+format = '[\[$time\]]($style)'
+style = "maroon"
+
+[directory]
+style = "blue"
+fish_style_pwd_dir_length = 1
+truncation_length = 1
+
+[character]
+success_symbol = "[❯](mauve)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
+[git_branch]
+format = "[$branch]($style)"
+style = "bright-black"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218)($ahead_behind$stashed)]($style) "
+style = "green"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[cmd_duration]
+format = '[\[$duration\]]($style)'
+style = "sky"
+min_time = 0
+
+[c]
+format = '[\[$symbol($version(-$name))\]]($style)'
+symbol = " "
+disabled = false
+style = 'overlay0'
+
+[python]
+format = '[\[${symbol}${pyenv_prefix}(${version}) ($virtualenv)\]]($style)'
+style = "overlay0"
+symbol = " " # 
+
+[localip]
+disabled = false
+format = '\[[$localipv4]($style)\]'
+style = "green"
+
+[memory_usage]
+format = '[\[$symbol[$ram( | $swap)]($style)\]'
+disabled = false
+style = "red"
+
+[shell]
+disabled = false
+format = '[\[$indicator\]]($style)'
+style = "yellow"
+
+[sudo]
+format = "[$symbol]($style)"
+symbol = " "
+style = "yellow"
+
+[palettes.catppuccin-macchiato]
+rosewater = "#F4DBD6"
+flamingo  = "#F0C6C6"
+pink      = "#F5BDE6"
+mauve     = "#C6A0F6"
+red       = "#ED8796"
+maroon    = "#EE99A0"
+peach     = "#F5A97F"
+yellow    = "#EED49F"
+green     = "#A6DA95"
+teal      = "#8BD5CA"
+sky       = "#91D7E3"
+sapphire  = "#7DC4E4"
+blue      = "#8AADF4"
+lavender  = "#B7BDF8"
+
+text     = "#CAD3F5"
+subtext1 = "#B8C0E0"
+subtext0 = "#A5ADCB"
+overlay2 = "#939AB7"
+overlay1 = "#8087A2"
+overlay0 = "#6E738D"
+surface2 = "#5B6078"
+surface1 = "#494D64"
+surface0 = "#363A4F"
+
+base   = "#24273A"
+mantle = "#1E2030"
+crust  = "#181926"

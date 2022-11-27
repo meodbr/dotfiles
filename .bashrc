@@ -103,10 +103,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.config/bash/aliases ]; then
-    . ~/.config/bash/aliases
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -120,34 +116,15 @@ fi
 
 # FAIT PAR MEO
 
-: << 'USELESS'
-runshellcode(){
-	gcc -g -Wall -fno-stack-protector -z execstack $1.c -o $1
-	echo "compiled, lets go :"
-	./$1
-}
+if [ -f ~/.config/shells/aliases.sh ]; then
+    . ~/.config/shells/aliases.sh
+fi
 
-runnasm(){
-	nasm -f elf64 $1.asm -o $1.o
-	ld $1.o -o $1
-	echo "assembled and linked, lets go :"
-	rm $1.o
-	./$1
-}
+if [ -f ~/.config/shells/config.sh ]; then
+    . ~/.config/shells/config.sh
+fi
 
-
-toshellcode(){
-	nasm -f elf64 $1.asm -o $1.o
-	ld $1.o -o $1
-	objdump -d $1
-	for i in `objdump -d $1	| tr '\t' ' ' | tr ' ' '\n' | egrep '^[0-9a-f]{2}$' ` ; do echo -n "\\x$i" ; done
-	echo ""
-	rm $1.o
-	rm $1
-}
-USELESS
-
-export PATH="$PATH:$HOME/.path"
+export PATH="$PATH:$HOME/.path:/snap/bin"
 
 shellmake() {
 	~/.path/shellmake.sh $@
@@ -157,8 +134,15 @@ skeleton() {
     ~/.path/skeleton.sh $@
 }
 
+cdt() {
+    cd $@ && tree -L 2
+}
+
+cdl() {
+    cd $@ && ls
+}
+
 export EDITOR=nvim
 # export PS1="\W \$ "
 
-# starship
 eval "$(starship init bash)"
