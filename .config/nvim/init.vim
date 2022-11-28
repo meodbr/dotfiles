@@ -1,4 +1,5 @@
-"" lua require('config')
+
+"" lua require('telescope').setup()
 
 call plug#begin()
 "" Plug 'drewtempelmeyer/palenight.vim'
@@ -10,7 +11,11 @@ Plug 'preservim/tagbar'
 Plug 'universal-ctags/ctags'
 "" Plug 'luochen1990/rainbow' " no
 "" Plug 'vim-syntastic/syntastic' " no
+
+"" lightline
 Plug 'itchyny/lightline.vim'
+Plug 'j-hui/fidget.nvim'
+
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'tommcdo/vim-lion'
@@ -22,6 +27,24 @@ Plug 'kalvinpearce/ShaderHighlight'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'ap/vim-css-color'
 "" Plug 'gko/vim-coloresque'
+
+"" file sailing
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'ThePrimeagen/harpoon'
+
+"" indent
+"" Plug 'thaerkh/vim-indentguides'
+Plug 'lukas-reineke/indent-blankline.nvim'
+
+"" cursor
+Plug 'danilamihailov/beacon.nvim'
+
+""git 
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
 
 " Get syntax files from config folder
@@ -33,6 +56,12 @@ let g:lightline = {'colorscheme': 'catppuccin'}
 
 " Disable C-z from job-controlling neovim
 nnoremap <c-z> <nop>
+
+"" indent
+let g:indentguides_tabchar = '|' 
+let g:indentguides_spacechar = '|'
+let g:indentguides_ignorelist = ['text']
+"" cool line : 
 
 " Syntax highlighting
 syntax on
@@ -51,7 +80,7 @@ set encoding=utf-8
 set wrap
 
 " set node version for coc
-let g:coc_node_path = '/snap/bin/node'
+"" let g:coc_node_path = '/snap/bin/node'
 
 " set omnisharp to use my mono version
 let g:OmniSharp_server_use_mono = 1
@@ -274,9 +303,11 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+lua require('config')
+
 " add cocstatus into lightline
 let g:lightline = {
-	\ 'colorscheme': 'wombat',
+    \ 'colorscheme': 'catppuccin',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
@@ -331,8 +362,36 @@ nnoremap <C-Right> :vertical resize -3<CR>
 nmap <silent>tt :10sp term://bash<CR>
 tnoremap <Esc> <C-\><C-n>
 
+"" Telescope settings
+nnoremap <silent>ff <cmd>Telescope find_files<cr>
+nnoremap <silent>fg <cmd>Telescope live_grep<cr>
+nnoremap <silent>fb <cmd>Telescope buffers<cr>
+nnoremap <silent>fh <cmd>Telescope help_tags<cr>
+
 "" Vifm settings
-nmap <silent>vv :VsplitVifm<CR>
-nmap <silent>vc :SplitVifm<CR>
-nmap <silent>vd :DiffVifm<CR>
-nmap <silent>vm :Vifm<CR>
+nmap <silent><nowait>vv :VsplitVifm<CR>
+nmap <silent><nowait>vc :SplitVifm<CR>
+nmap <silent><nowait>vd :DiffVifm<CR>
+nmap <silent><nowait>vm :Vifm<CR>
+
+"" fast
+nmap <silent>ze bce
+
+nmap <silent>zj 50j
+nmap <silent>zk 50k
+nmap <silent>zl 20l
+nmap <silent>zh 20h
+
+nmap <silent>mf :lua require("harpoon.mark").add_file()<cr>
+nmap <silent>gb :lua require("harpoon.ui").nav_prev()<cr>
+nmap <silent>gf :lua require("harpoon.ui").nav_next()<cr>
+nmap <silent>ml :lua require("harpoon.ui").toggle_quick_menu()<cr>
+nmap <silent>gt :lua require("harpoon.term").gotoTerminal(1)<cr>
+
+set number
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+augroup END

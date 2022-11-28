@@ -1,0 +1,1 @@
+/home/meo/.fzf/shell/key-bindings.fish
