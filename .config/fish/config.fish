@@ -9,7 +9,7 @@ fish_vi_key_bindings
 
 fish_config theme choose "Catppuccin-macchiato"
 
-set -gx PATH $PATH $HOME/.path/
+set -gx PATH $PATH $HOME/.path/ $HOME/go/bin
 set -gx EDITOR /snap/bin/nvim
 
 # fzf opts

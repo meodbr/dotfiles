@@ -1,5 +1,5 @@
 format = """
- $username\
+$username\
 $hostname\
 $directory\
 $git_branch\
@@ -17,7 +17,7 @@ $localip\
 $shell\
 $time"""
 
-continuation_prompt = "[❯❯](mauve) "
+continuation_prompt = "[>>](mauve) " # ❯
 
 add_newline = false
 
@@ -29,14 +29,17 @@ format = '[\[$time\]]($style)'
 style = "maroon"
 
 [directory]
+format = " [$path]($style)[$read_only]($read_only_style) "
 style = "blue"
 fish_style_pwd_dir_length = 1
-truncation_length = 1
+truncation_length = 3
+repo_root_format = " [$before_root_path]($style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+repo_root_style = "bold teal"
 
 [character]
-success_symbol = "[❯](mauve)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[\\\u0024](mauve)"
+error_symbol = "[\\\u0024](red)"
+vimcmd_symbol = "[\\\u0024](green)"
 
 [git_branch]
 format = "[$branch]($style)"
@@ -45,9 +48,9 @@ style = "bright-black"
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218)($ahead_behind$stashed)]($style) "
 style = "green"
-conflicted = "​"
-untracked = "​"
-modified = "​"
+conflicted = "="
+untracked = "?"
+modified = "!${count}"
 staged = "​"
 renamed = "​"
 deleted = "​"
@@ -92,6 +95,15 @@ style = "yellow"
 format = "[$symbol]($style)"
 symbol = " "
 style = "yellow"
+
+[username]
+format = " [$user]($style)"
+style_user = "flamingo"
+style_root = "red"
+
+[hostname]
+format = "[@](blue)[$hostname]($style)"
+style = "flamingo"
 
 [palettes.catppuccin-macchiato]
 rosewater = "#F4DBD6"

@@ -124,7 +124,7 @@ if [ -f ~/.config/shells/config.sh ]; then
     . ~/.config/shells/config.sh
 fi
 
-export PATH="$PATH:$HOME/.path:/snap/bin"
+export PATH="$PATH:$HOME/.path:/snap/bin:$HOME/go/bin"
 
 shellmake() {
 	~/.path/shellmake.sh $@
