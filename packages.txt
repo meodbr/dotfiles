@@ -1,1 +1,4 @@
+vim
 code
+gcc
+gitg
