@@ -1,14 +1,9 @@
 #!/bin/bash
 
-# dotfiles github backup
-alias config='/usr/bin/git --git-dir=/home/meo/.cfg/ --work-tree=/home/meo'
-
-alias shellmake=shellmake.sh
-alias skeleton=skeleton.sh
-
 # rapide
 alias v="nvim"
 alias nv="nvim"
+alias ll="ls -al"
 
 alias nvimc="$HOME/.config/nvim/init.vim"
 alias fishc="$HOME/.config/fish/config.fish"
@@ -26,3 +21,14 @@ alias ade="open https://ade.bordeaux-inp.fr/direct/myplanning.jsp?ticket  =ST-38
 alias gs="git status"
 alias gc="git commit"
 alias ga="git add"
+
+# grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# ls
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias ls='ls --color=auto'
