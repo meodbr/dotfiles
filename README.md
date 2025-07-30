@@ -16,6 +16,7 @@ The installer script performs the following tasks:
 ## Usage
 
 ```bash
+sudo chmod a+x install.sh
 ./install.sh [--apt | --dnf]
 ```
 

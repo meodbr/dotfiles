@@ -1,4 +1,3 @@
 vim
-code
 gcc
 gitg

@@ -1,7 +1,7 @@
 BASHRC_FILE="$HOME/.bashrc"
 CONFIG_DIR="$HOME/.config"
 
-BASHRC_ADDITIONS="./bashrc_addition.sh"
+BASHRC_ADDITIONS="./bashrc_additions.sh"
 STORED_CONFIG=".config"
 PACKAGE_LIST="packages.txt"
 
@@ -31,7 +31,7 @@ fi
 if ! grep -q "meodbr/dotfiles" "$BASHRC_FILE"; then
     {
         echo ""
-        echo "source ~/meodbr/dotfiles/bashrc_additions.sh"
+        cat $BASHRC_ADDITIONS
     } >> "$BASHRC_FILE"
     echo "Updated $BASHRC_FILE"
 fi
@@ -49,6 +49,7 @@ cp -rn $STORED_CONFIG/* $CONFIG_DIR/
 
 # Starship install
 curl -sS https://starship.rs/install.sh | sh
+
 
 # Packages install
 if [ ! -f "$PACKAGE_LIST" ]; then
@@ -78,6 +79,12 @@ if [ "$PKG_MANAGER" = "apt-get" ]; then
 elif [ "$PKG_MANAGER" = "dnf" ]; then
     sudo dnf check-update || true
     PKG_CMD="sudo dnf install -y"
+
+    # VSCode install on dnf
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+    dnf check-update
+    sudo dnf install code -y # or code-insiders
 fi
 
 # Install packages one by one
@@ -90,7 +97,8 @@ while IFS= read -r package; do
             echo "Failed to install: $package"
         fi
     fi
-done < "$PACKAGE_FILE"
-
+done < "$PACKAGE_LIST"
+echo "Script ended, running source ~/.bashrc"
+source ~/.bashrc
 
 
