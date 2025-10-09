@@ -74,17 +74,17 @@ PKG_CMD=""
 
 # Update and set command
 if [ "$PKG_MANAGER" = "apt-get" ]; then
-    sudo apt-get update
-    PKG_CMD="sudo apt-get install -y"
+    sudo -E apt-get update
+    PKG_CMD="sudo -E apt-get install -y"
 elif [ "$PKG_MANAGER" = "dnf" ]; then
-    sudo dnf check-update || true
-    PKG_CMD="sudo dnf install -y"
+    sudo -E dnf check-update || true
+    PKG_CMD="sudo -E dnf install -y"
 
     # VSCode install on dnf
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
-    dnf check-update
-    sudo dnf install code -y # or code-insiders
+    sudo -E rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo -E tee /etc/yum.repos.d/vscode.repo > /dev/null
+    sudo -E dnf check-update
+    sudo -E dnf install code -y # or code-insiders
 fi
 
 # Install packages one by one

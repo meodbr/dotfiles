@@ -25,3 +25,8 @@ options:
 * --dnf — Force use of dnf as package manager.
 
 If no flag is provided, the script tries to auto-detect the package manager.
+
+## Liens utiles
+
+Intégration rdp pour vm Hyper V (Copy/paste, résolution écran):
+https://gist.github.com/HarmfulBreeze/9d013676301d784ce9783a39b0e66a84
