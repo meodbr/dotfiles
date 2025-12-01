@@ -1,0 +1,67 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.autoIndentOnPaste": true,
+    "vim.useCtrlKeys": false,
+    "vim.leader": " ",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before":["<leader>", "v"],
+            "commands": [
+                "extension.vim_ctrl+v",
+            ]
+        },
+        {
+            "before":["<leader>", "j"],
+            "commands": [
+                "workbench.action.openNextRecentlyUsedEditor",
+            ]
+        },
+        {
+            "before":["<leader>", "k"],
+            "commands": [
+                "workbench.action.openPreviousRecentlyUsedEditor",
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before":["<Tab>"],
+            "commands": [
+                "editor.action.indentLines",
+            ]
+        },
+        {
+            "before":["<S-Tab>"],
+            "commands": [
+                "editor.action.outdentLines",
+            ]
+        }
+    ],
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "pylint.args": [
+        // "--disable=C0103",  // Invalid name (variables, constants, classes)
+        "--disable=C0114",  // Missing module docstring
+        "--disable=C0115",  // Missing class docstring
+        "--disable=C0116",  // Missing function/method docstring
+        "--disable=W0611",  // Unused import
+        "--disable=W0612",  // Unused variable
+        "--disable=W0613",  // Unused argument
+        // "--disable=R0903",  // Too few public methods
+        // "--disable=R0913",  // Too many function arguments
+        // "--disable=R0914",  // Too many local variables
+        // "--disable=R0915",  // Too many statements in function
+        // "--disable=E1101",  // Instance has no member (false positives)
+        // "--disable=W0703",  // Catching too general exception
+        // "--disable=R0801",  // Duplicate code
+        "--disable=C0301",   // Line too long
+        // "--disable=I1101",  // Missing definition
+        "--disable=C0415",   // Import outside top-level
+    ]
+}
+        
+    
