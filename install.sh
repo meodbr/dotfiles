@@ -5,15 +5,21 @@ BASHRC_ADDITIONS="./bashrc_additions.sh"
 STORED_CONFIG=".config"
 PACKAGE_LIST="packages.txt"
 
+set -euo pipefail
+trap 'echo "Script interrupted."; exit 1' INT
+
 # ---------- CLI ARGS ------------
 
 PKG_MANAGER="auto"
+OVERWRITE_STRATEGY="skip"
 
 # Parse command line flag
 while [[ "$#" -gt 0 ]]; do
     case "$1" in
         --apt) PKG_MANAGER="apt-get" ;;
         --dnf) PKG_MANAGER="dnf" ;;
+        --no-install) PKG_MANAGER="no-install" ;;
+        --force) OVERWRITE_STRATEGY="force" ;;
         *) echo "Unknown option: $1"; exit 1 ;;
     esac
     shift
@@ -43,7 +49,19 @@ if [ ! -d "$CONFIG_DIR" ]; then
 fi
 
 # Add config files
-cp -rn $STORED_CONFIG/* $CONFIG_DIR/
+if [ "$OVERWRITE_STRATEGY" = "force" ]; then
+    cp -rvfb $STORED_CONFIG/* $CONFIG_DIR/
+    echo "Copied config files to $CONFIG_DIR with force overwrite (backup created)"
+else
+    echo "Copying config files to $CONFIG_DIR, skipping existing files, use --force to overwrite"
+    cp -rnv $STORED_CONFIG/* $CONFIG_DIR/
+fi
+echo "Copied config files to $CONFIG_DIR"
+
+if [ "$PKG_MANAGER" = "no-install" ]; then
+    echo "Exiting before installation as per --no-install flag"
+    exit 0
+fi
 
 # ---------- PACKAGES INSTALL ----------
 

@@ -23,6 +23,8 @@ sudo chmod a+x install.sh
 options:
 * --apt — Force use of apt-get as package manager.
 * --dnf — Force use of dnf as package manager.
+* --no-install — Don't install packages, only edit config
+* --force — Overwrite existing config files
 
 If no flag is provided, the script tries to auto-detect the package manager.
 
