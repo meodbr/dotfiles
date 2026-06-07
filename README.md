@@ -32,3 +32,5 @@ If no flag is provided, the script tries to auto-detect the package manager.
 
 Intégration rdp pour vm Hyper V (Copy/paste, résolution écran):
 https://gist.github.com/HarmfulBreeze/9d013676301d784ce9783a39b0e66a84
+
++ fichier test.py
